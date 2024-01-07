@@ -12,9 +12,16 @@ body {
 nav {
   text-transform: uppercase;
 }
-nav .nav-link, nav .navbar-brand, nav .navbar-nav .nav-link.active, nav .navbar-nav .show > .nav-link, nav .fa-bars {
+nav .nav-link,
+nav .navbar-brand,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .show > .nav-link,
+nav .fa-bars {
   color: #fff;
 }
-nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:focus, nav .navbar-brand:hover {
+nav .nav-link:focus,
+nav .nav-link:hover,
+nav .navbar-brand:focus,
+nav .navbar-brand:hover {
   color: #039dff;
 }/*# sourceMappingURL=main.css.map */
