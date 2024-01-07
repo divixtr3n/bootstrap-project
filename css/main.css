@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333;
+}
+
+nav {
+  text-transform: uppercase;
+}
+nav .nav-link, nav .navbar-brand, nav .navbar-nav .nav-link.active, nav .navbar-nav .show > .nav-link, nav .fa-bars {
+  color: #fff;
+}
+nav .nav-link:focus, nav .nav-link:hover, nav .navbar-brand:focus, nav .navbar-brand:hover {
+  color: #039dff;
+}/*# sourceMappingURL=main.css.map */
