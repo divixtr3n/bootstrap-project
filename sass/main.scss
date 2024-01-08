@@ -1,3 +1,5 @@
+@use '../sass/colors.scss' as colors;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -9,19 +11,139 @@ body {
 	background-color: #333;
 }
 
+.blue-text {
+	color: colors.$main-color;
+}
+
+.shadow-bg { 
+	background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+.section-title { 
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline { 
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: colors.$main-color;
+}
+
 nav {
 	text-transform: uppercase;
+	transition: .5s;
+	z-index: 2;
+
+	.navbar-toggler {
+		padding: 10px 15px;
+		border: none;
+	}
 	.nav-link,
 	.navbar-brand,
-	.navbar-nav .nav-link.active,
 	.navbar-nav .show > .nav-link,
 	.fa-bars {
-		color: #fff;
+		color: colors.$navbar-text-color;
 	}
 	.nav-link:focus,
 	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link {
+		color: colors.$main-color;
+	}
+
 	.navbar-brand:focus,
 	.navbar-brand:hover {
-		color: #039dff;
+		color: colors.$main-color;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+}
+
+.hero-img {
+	position: relative;
+	height: 100vh;
+	background: url(../img/consoleSmall.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+	color: colors.$navbar-text-color;
+	.hero-text {
+		height: 100%;
+		z-index: 2;
+		text-align: center;
+		h1 {
+			text-transform: uppercase;
+		}
+	}
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color: #000000, $alpha: 0.6);
+	z-index: -1;
+}
+
+.fa-chevron-down {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 20px;
+	font-size: 30px;
+	color: colors.$navbar-text-color;
+	z-index: 1;
+	text-decoration-line: none;
+	.fa-chevron-down:hover {
+		color: colors.$main-color;
+	}
+}
+
+.btn {
+	text-transform: uppercase;
+}
+
+.aboutus { 
+	i { 
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.aboutus-card-title { 
+		font-size: 18px;
+		text-transform: uppercase;
+
+	}
+
+	.aboutus-card-text { 
+		font-size: 14px;
+	}
+
+
+	
+}
+
+@media (min-width: 768px) { 
+	.hero-text { 
+		h1 {
+			font-size: 42px;
+		} 
+
+		p { 
+			font-size: 20px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.hero-img {
+		background: url(../img/consoleBig.jpg);
 	}
 }

@@ -9,19 +9,124 @@ body {
   background-color: #333;
 }
 
+.blue-text {
+  color: #039dff;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #039dff;
+}
+
 nav {
   text-transform: uppercase;
+  transition: 0.5s;
+  z-index: 2;
+}
+nav .navbar-toggler {
+  padding: 10px 15px;
+  border: none;
 }
 nav .nav-link,
 nav .navbar-brand,
-nav .navbar-nav .nav-link.active,
 nav .navbar-nav .show > .nav-link,
 nav .fa-bars {
   color: #fff;
 }
 nav .nav-link:focus,
 nav .nav-link:hover,
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .show > .nav-link {
+  color: #039dff;
+}
 nav .navbar-brand:focus,
 nav .navbar-brand:hover {
   color: #039dff;
+}
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+.hero-img {
+  position: relative;
+  height: 100vh;
+  background: url(../img/consoleSmall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  color: #fff;
+}
+.hero-img .hero-text {
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+}
+.hero-img .hero-text h1 {
+  text-transform: uppercase;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.fa-chevron-down {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  font-size: 30px;
+  color: #fff;
+  z-index: 1;
+  text-decoration-line: none;
+}
+.fa-chevron-down .fa-chevron-down:hover {
+  color: #039dff;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 42px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-img {
+    background: url(../img/consoleBig.jpg);
+  }
 }/*# sourceMappingURL=main.css.map */
