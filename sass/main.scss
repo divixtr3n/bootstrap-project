@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-padding-top: 74px;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #333;
@@ -15,16 +19,16 @@ body {
 	color: colors.$main-color;
 }
 
-.shadow-bg { 
+.shadow-bg {
 	background-color: rgba($color: #000000, $alpha: 0.8);
 }
 
-.section-title { 
+.section-title {
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.underline { 
+.underline {
 	margin: 0 auto 40px;
 	width: 60px;
 	height: 4px;
@@ -33,7 +37,7 @@ body {
 
 nav {
 	text-transform: uppercase;
-	transition: .5s;
+	transition: background-color 0.5s;
 	z-index: 2;
 
 	.navbar-toggler {
@@ -68,6 +72,7 @@ nav {
 	height: 100vh;
 	background: url(../img/consoleSmall.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	z-index: 0;
@@ -110,35 +115,45 @@ nav {
 	text-transform: uppercase;
 }
 
-.aboutus { 
-	i { 
+.aboutus {
+	i {
 		margin-top: 20px;
 		font-size: 30px;
 	}
 
-	.aboutus-card-title { 
+	.aboutus-card-title {
 		font-size: 18px;
 		text-transform: uppercase;
-
 	}
 
-	.aboutus-card-text { 
+	.aboutus-card-text {
 		font-size: 14px;
 	}
 
+	.aboutus-hover {
+		transition: color 0.4s;
+	}
 
-	
+	.aboutus-hover:hover {
+		color: colors.$main-color;
+	}
 }
 
-@media (min-width: 768px) { 
-	.hero-text { 
+@media (min-width: 768px) {
+	.hero-text {
 		h1 {
 			font-size: 42px;
-		} 
+		}
 
-		p { 
+		p {
 			font-size: 20px;
 		}
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
 	}
 }
 

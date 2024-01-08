@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 74px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #333;
@@ -31,7 +35,7 @@ body {
 
 nav {
   text-transform: uppercase;
-  transition: 0.5s;
+  transition: background-color 0.5s;
   z-index: 2;
 }
 nav .navbar-toggler {
@@ -63,6 +67,7 @@ nav .navbar-brand {
   height: 100vh;
   background: url(../img/consoleSmall.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   z-index: 0;
@@ -116,6 +121,12 @@ nav .navbar-brand {
 .aboutus .aboutus-card-text {
   font-size: 14px;
 }
+.aboutus .aboutus-hover {
+  transition: color 0.4s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #039dff;
+}
 
 @media (min-width: 768px) {
   .hero-text h1 {
@@ -123,6 +134,11 @@ nav .navbar-brand {
   }
   .hero-text p {
     font-size: 20px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
   }
 }
 @media (min-width: 1200px) {
