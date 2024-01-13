@@ -12,7 +12,7 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #333;
+	background-color: colors.$bg-color;
 }
 
 .blue-text {
@@ -33,6 +33,13 @@ body {
 	width: 60px;
 	height: 4px;
 	background-color: colors.$main-color;
+}
+
+.underline-thin {
+	margin: 0 auto 40px;
+	width: 100%;
+	height: 1px;
+	background-color: colors.$thin-lines;
 }
 
 nav {
@@ -142,10 +149,9 @@ nav {
 .aboutus-hero {
 	position: relative;
 	background-image: url(../img/processor-small.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
-	color: $light-gray;
+	background-position: center;
+	color: colors.$light-gray;
 	z-index: -2;
 
 	.aboutus-shadow {
@@ -154,8 +160,51 @@ nav {
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background-color: rgba($color: #000000, $alpha: 0.6);
+		background-color: rgba($color: #000000, $alpha: 0.7);
 		z-index: -1;
+	}
+
+	.aboutus-hero-item {
+		margin: 10px 0;
+
+		i {
+			font-size: 36px;
+		}
+
+		.aboutus-hero-title {
+			font-size: 24px;
+		}
+	}
+}
+
+.portfolio {
+	.carousel-item {
+		height: 600px;
+	}
+
+	.carousel-caption {
+		padding: 40px 0;
+		left: 0;
+		right: 0;
+		background-color: rgba($color: #000000, $alpha: 0.8);
+	}
+
+	.carousel-indicators {
+		padding-bottom: 20px;
+	}
+}
+
+.prices {
+	.price-button {
+		padding: 5px 10px;
+		border-radius: 8px;
+		background-color: colors.$thin-lines;
+		border: none;
+	}
+
+	a {
+		text-decoration: none;
+		color: colors.$light-gray;
 	}
 }
 
@@ -174,6 +223,10 @@ nav {
 @media (min-width: 992px) {
 	html {
 		scroll-padding-top: 72px;
+	}
+
+	.aboutus-hero {
+		background-image: url(../img/processor-big.jpg);
 	}
 }
 
