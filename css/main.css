@@ -128,6 +128,25 @@ nav .navbar-brand {
   color: #039dff;
 }
 
+.aboutus-hero {
+  position: relative;
+  background-image: url(../img/processor-small.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ddd;
+  z-index: -2;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;
