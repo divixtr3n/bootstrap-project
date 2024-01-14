@@ -170,23 +170,45 @@ nav .navbar-brand {
 
 .prices .price-box {
   margin: 20px;
+  padding: 30px;
   background-color: #fff;
-  padding: 40px 30px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.774);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: scale 0.3s;
 }
 .prices .price-box .price-title {
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
   color: #039dff;
 }
 .prices .price-box i {
-  font-size: 22px;
-  margin-left: 5px;
+  font-size: 24px;
+  padding: 5px;
 }
-.prices .price-box span, .prices .price-box .price-tag {
+.prices .price-box span,
+.prices .price-box .price-tag {
   font-weight: bold;
 }
 .prices .price-box .price-tag {
-  font-size: 36px;
+  font-size: 30px;
+}
+.prices .price-box button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.prices .price-box:hover {
+  scale: 105%;
+}
+.prices .price-info {
+  margin-top: 30px;
+}
+.prices .price-info A {
+  text-decoration: none;
+}
+
+.team .card-group .text-muted {
+  display: flex;
+  justify-content: space-around;
 }
 
 @media (min-width: 768px) {

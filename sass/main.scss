@@ -188,31 +188,63 @@ nav {
 }
 
 .prices {
-	
 	.price-box {
 		margin: 20px;
-		background-color: #fff;
-		padding: 40px 30px;
-		box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.774);
+		padding: 30px;
+		background-color: colors.$white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: scale 0.3s;
 
-		.price-title { 
+		.price-title {
 			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 20px;
 			color: colors.$main-color;
 		}
 
-		i { 
-			font-size: 22px;
-			margin-left: 5px;
+		i {
+			font-size: 24px;
+			padding: 5px;
 		}
 
-		span, .price-tag { 
+		span,
+		.price-tag {
 			font-weight: bold;
 		}
-		.price-tag { 
-			font-size: 36px;
+		.price-tag {
+			font-size: 30px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
 		}
 	}
 
+	.price-box:hover {
+		scale: 105%;
+	}
+
+	.price-info {
+		margin-top: 30px;
+
+		A {
+			text-decoration: none;
+		}
+	}
+}
+
+.team { 
+	.card-group { 
+
+		.text-muted { 
+			display: flex;
+			justify-content: space-around;
+			
+			
+		}
+		
+	}
 }
 
 @media (min-width: 768px) {
