@@ -33,13 +33,6 @@ body {
   background-color: #039dff;
 }
 
-.underline-thin {
-  margin: 0 auto 40px;
-  width: 100%;
-  height: 1px;
-  background-color: #9297ae;
-}
-
 nav {
   text-transform: uppercase;
   transition: background-color 0.5s;
@@ -175,15 +168,25 @@ nav .navbar-brand {
   padding-bottom: 20px;
 }
 
-.prices .price-button {
-  padding: 5px 10px;
-  border-radius: 8px;
-  background-color: #9297ae;
-  border: none;
+.prices .price-box {
+  margin: 20px;
+  background-color: #fff;
+  padding: 40px 30px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.774);
 }
-.prices a {
-  text-decoration: none;
-  color: #ddd;
+.prices .price-box .price-title {
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices .price-box i {
+  font-size: 22px;
+  margin-left: 5px;
+}
+.prices .price-box span, .prices .price-box .price-tag {
+  font-weight: bold;
+}
+.prices .price-box .price-tag {
+  font-size: 36px;
 }
 
 @media (min-width: 768px) {
