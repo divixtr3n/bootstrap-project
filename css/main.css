@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-padding-top: 74px;
+  scroll-padding-top: 65px;
 }
 
 body {
@@ -206,11 +206,113 @@ nav .navbar-brand {
   text-decoration: none;
 }
 
-.team .card-group .text-muted {
-  display: flex;
-  justify-content: space-around;
+.team {
+  position: relative;
+  background-image: url(../img/office-small.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.team .section-title {
+  color: #fff;
+}
+.team .team-shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+.team .card {
+  transition: scale 0.3s;
+}
+.team .card img {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .card i {
+  padding: 10px;
+}
+.team .card .card-body {
+  height: 160px;
+}
+.team .card:hover {
+  scale: 0.96;
+}
+.team .card-title {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
+.achievements .achievement-list {
+  padding: 20px 0;
+}
+.achievements .achievement-item i {
+  padding: 10px;
+  margin-bottom: -15px;
+  font-size: 48px;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.623);
+}
+.achievements .achievement-item .achievement-number {
+  font-size: 22px;
+}
+.achievements .achievement-item .achievement-text {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.contact-hero {
+  z-index: 1;
+  position: relative;
+  background-image: url(../img/skyline-small.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact-hero .contact-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.contact-hero .section-title {
+  color: #ddd;
+}
+.contact-hero .underline {
+  background-color: #ddd;
+}
+.contact-hero .row h3 {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+.contact-hero .contact-us {
+  color: #fff;
+}
+.contact-hero .social-media i {
+  font-size: 25px;
+  padding: 5px 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.contact-hero .social-media i:hover {
+  color: #039dff;
+}
+
+@media (min-width: 375px) {
+  .team .card img {
+    height: 300px;
+  }
+}
 @media (min-width: 768px) {
   .hero-text h1 {
     font-size: 42px;

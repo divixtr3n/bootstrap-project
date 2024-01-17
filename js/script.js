@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
-	allNavItems.forEach(item => item.addEventListener('click', () => {
-		navList.classList.remove('show')
-	}))
+	allNavItems.forEach(item =>
+		item.addEventListener('click', () => {
+			navList.classList.remove('show')
+		})
+	)
 
 	window.addEventListener('scroll', addShadow)
-
 })
